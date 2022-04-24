@@ -1,0 +1,56 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* variable */
+:root {
+    /* font family */
+    --ff-primary: 'Lora', serif;
+    --ff-secondery: 'Roboto', sans-serif;
+
+    /* font size */
+    --fs-primary: 4.236rem;
+    --fs-secondary: calc(var(--fs-primary) / 1.618);
+    --fs-third: calc(var(--ff-primary) / (1.618 * 2));
+
+    /* background color */
+    --tw-bg-opacity: 1;
+    --bg-primary: rgba(31, 41, 55, var(--tw-bg-opacity));
+    --bg-secondary: rgba(131, 24, 67, var(--tw-bg-opacity));
+
+    /* font width */
+    --fw-bold: 700;
+    --fw-medium: 500;
+    --fw-normal: 300;
+}
+
+
+
+/* global style */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first__section {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+main.container {
+    width: 70%;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: var(--bg-secondary);
+}
+
+.first__section__heading {
+    font-size: var(--fs-third);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-medium);
+    color: aliceblue;
+    text-align: center;
+}
